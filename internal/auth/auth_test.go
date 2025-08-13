@@ -6,7 +6,7 @@ import (
 )
 
 func TestGetAPIKey(t *testing.T) {
-	t.Fail()
+	// t.Fail()
 
 	_, err := GetAPIKey(http.Header{
 		"a": []string{"1"},
