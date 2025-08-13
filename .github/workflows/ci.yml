@@ -1,4 +1,4 @@
-name: CIYAI
+name: ci
 
 on:
   pull_request:
@@ -10,15 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Check out code
         uses: actions/checkout@v4
 
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
           go-version: "1.23.0"
-      
-      - name: Force failure
+
+      - name: Force Failure
         run: (exit 1)
-
-
